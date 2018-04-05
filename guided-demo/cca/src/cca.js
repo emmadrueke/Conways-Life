@@ -86,12 +86,12 @@ class CCA {
     function hasInfectiousNeighbor(x, y) {
       const nextValue = (currentBuffer[y][x] + 1) % MODULO;
 
-      // West
-      if (x > 0) {
-        if (currentBuffer[y][x-1] === nextValue) {
-          return true;
-        }
-      }
+      // // West
+      // if (x > 0) {
+      //   if (currentBuffer[y][x-1] === nextValue) {
+      //     return true;
+      //   }
+      // }
 
       // North
       if (y > 0) {
